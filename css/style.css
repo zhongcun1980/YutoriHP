@@ -690,6 +690,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
 .cta__title {
   margin-bottom: 1rem;
+  font-size: clamp(1.35rem, 3.8vw, 2.2rem);
+  letter-spacing: 0.04em;
 }
 
 .cta__desc {
@@ -890,5 +892,10 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
 
   .cta__phone {
     font-size: 1.5rem;
+  }
+
+  .cta__title {
+    font-size: 1.3rem;
+    letter-spacing: 0.02em;
   }
 }
