@@ -415,7 +415,8 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   margin: 0 auto;
   text-align: center;
   padding: 2.5rem 2rem;
-  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-card);
+  border: 1px solid rgba(196, 163, 90, 0.35);
 }
 
 .therapist-intro__lead {
@@ -430,21 +431,26 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); }
   color: var(--color-cream-muted);
   font-size: 0.95rem;
   line-height: 2;
+  margin-bottom: 1.5rem;
 }
 
-.therapist-intro__text + .therapist-intro__text {
-  margin-top: 1.5rem;
+.therapist-intro__text:last-child {
+  margin-bottom: 0;
 }
 
 .therapist-intro__link {
+  display: inline-block;
   color: var(--color-gold);
-  border-bottom: 1px solid rgba(196, 163, 90, 0.4);
-  transition: color var(--transition), border-color var(--transition);
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color var(--transition);
 }
 
 .therapist-intro__link:hover {
   color: var(--color-gold-light);
-  border-color: var(--color-gold-light);
 }
 
 /* ---- Menu Preview ---- */
